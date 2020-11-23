@@ -12,6 +12,7 @@ class Employee
         {
             int head=1;
             int tail=0;
+	    int wagePerHour=20;
 
             System.out.println("Welcome to employee wage computation");
             Random random=new Random();
@@ -24,6 +25,9 @@ class Employee
             {
                 System.out.println("Employee is absent:"+randomNum);
             }
+	    int dailyEmpWage=randomNum*wagePerHour;
+	    System.out.println("Daily Emp Wage:"+dailyEmpWage);
+
 
         }
 }
